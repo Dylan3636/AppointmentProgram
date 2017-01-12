@@ -1,0 +1,78 @@
+INFO10-03-2016 17:20:18 || Main$Log.doLogging() : Start up
+
+INFO10-03-2016 17:20:18 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-03' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:20:18 || Main$Log.doLogging() : SELECT Name, ID From Patients;3
+
+INFO10-03-2016 17:20:18 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-03-2016 17:20:18 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-03-2016 17:20:18 || Main$Log.doLogging() : SELECT ID, Contact_Name, Contact_No, Contact_No_Type  From PATIENTS, Contacts Where Patients.ID = Contacts.Patient_ID and Contact_Type = 'Patient' and ID = 1234569 ;6
+
+INFO10-03-2016 17:20:25 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-03' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:20:25 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-03-2016 17:20:25 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-03' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:20:25 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-03-2016 17:20:38 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:38 || Main$Log.doLogging() : Insert into PAYMENTS (Patient_ID, Amount, Transaction_ID) values (1234568, 0, 6192)
+
+INFO10-03-2016 17:20:38 || Main$Log.doLogging() : UPDATE PATIENT_APPOINTMENTS Set Transaction_ID=6192 Where Appointment_ID=460817 ;
+
+INFO10-03-2016 17:20:41 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-03' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:20:41 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-03-2016 17:20:42 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-03' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:20:42 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT ID  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Name, Date, Hour, Minute, Duration, Amount, Type, Chair  From PATIENTS, PAYMENTS, PATIENT_APPOINTMENTS, APPOINTMENTS Where Patients.ID = 1234568 and Patient_Appointments.Appointment_ID = Appointments.Appointment_ID and Patient_Appointments.Patient_ID = 1234568 and Patient_Appointments.Transaction_ID = Payments.Transaction_ID ;6
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT ID, Contact_Name, Contact_No, Contact_No_Type  From PATIENTS, Contacts Where Patients.ID = Contacts.Patient_ID and Contact_Type = 'Patient' and ID = 1234568 ;6
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT ID, Contact_Name, Contact_No, Contact_No_Type  From PATIENTS, Contacts Where Patients.ID = Contacts.Patient_ID and Contact_Type = 'Emergency' and ID = 1234568 ;6
+
+INFO10-03-2016 17:20:58 || Main$Log.doLogging() : SELECT Insurance_Company From Insurance_Companies;2
+
+INFO10-03-2016 17:21:01 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-08-22' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:21:01 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+
+INFO10-03-2016 17:21:01 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-08-22' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-03-2016 17:21:01 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane Doe' ;5
+

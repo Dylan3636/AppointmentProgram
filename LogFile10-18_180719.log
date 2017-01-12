@@ -1,0 +1,30 @@
+INFO10-18-2016 18:07:19 || Main$Log.doLogging() : Start up
+
+INFO10-18-2016 18:07:19 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-18' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-18-2016 18:07:19 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-18' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-18-2016 18:07:49 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-18' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-18-2016 18:07:49 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-18' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-18-2016 18:07:50 || Main$Log.doLogging() : SELECT Name, ID From Patients;3
+
+INFO10-18-2016 18:07:58 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-18-2016 18:07:58 || Main$Log.doLogging() : Insert into PAYMENTS (Patient_ID, Amount, Transaction_ID) values (1234569, 0, 77372)
+
+INFO10-18-2016 18:07:58 || Main$Log.doLogging() : UPDATE PATIENT_APPOINTMENTS Set Transaction_ID=77372 Where Appointment_ID=8562188 ;
+
+INFO10-18-2016 18:08:00 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-18' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-18-2016 18:08:00 || Main$Log.doLogging() : SELECT ID  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+
+INFO10-18-2016 18:08:00 || Main$Log.doLogging() : Insert into APPOINTMENTS (Appointment_ID, Minute, Chair, Hour, Duration, Date) values (8562188, 30, 1, 10, '4X', '2016-10-18')
+
+INFO10-18-2016 18:08:00 || Main$Log.doLogging() : Insert into Patient_appointments (patient_id, appointment_id, Transaction_ID) values (1234569, 8562188, 77372)
+
+INFO10-18-2016 18:08:01 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Payments.Transaction_ID, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-10-18' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+
+INFO10-18-2016 18:08:01 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'James G Jordan' ;5
+

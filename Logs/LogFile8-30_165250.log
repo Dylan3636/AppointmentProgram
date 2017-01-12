@@ -1,0 +1,4 @@
+INFO08-30-2016 16:52:50 || Main$Log.doLogging() : Start up
+INFO08-30-2016 16:52:51 || Main$Log.doLogging() : SELECT Appointments.Appointment_ID, Patient_Type, Name, Date, Hour, Minute, Duration, Amount, Chair  From PATIENTS, APPOINTMENTS, PATIENT_APPOINTMENTS, PAYMENTS Where APPOINTMENTS.date = '2016-08-30' and APPOINTMENTS.APPOINTMENT_ID = PATIENT_APPOINTMENTS.APPOINTMENT_ID and PAYMENTS.Transaction_ID = ifnull(PATIENT_APPOINTMENTS.Transaction_ID,0) and PATIENTS.ID = PATIENT_APPOINTMENTS.PATIENT_ID ;6
+INFO08-30-2016 16:52:51 || Main$Log.doLogging() : SELECT Name, ID From Patients;3
+INFO08-30-2016 16:52:51 || Main$Log.doLogging() : SELECT First_Name, Middle_Name, Email, Last_Name, Insurance_Company, DOB, Sex, Title, Patient_Type, ID, Name, First_Visit_Date  From PATIENTS Where PATIENTS.Name = 'Jane  Doe' ;5
